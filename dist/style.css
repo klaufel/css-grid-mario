@@ -1,0 +1,427 @@
+/* ============================================================
+ * Here we go!! Another madness more... 
+ * ============================================================
+ *
+ * Testing the possibilities that CSS Grid layout will offer us,
+ * in this example we created a grid to paint them and create pixel art ;)
+ *
+ */
+@keyframes wink {
+  0%, 100% {
+    background: #6b6d00; }
+  90% {
+    background: #ea9f22; } }
+
+body {
+  background: #a0a2fc;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center; }
+
+.c-supermario {
+  width: 240px;
+  height: 320px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12, 1fr);
+  -ms-grid-rows: (1fr)[16];
+      grid-template-rows: repeat(16, 1fr);
+  grid-column-gap: 1px;
+  grid-row-gap: 1px; }
+  .c-supermario > div:nth-child(1) {
+    background: transparent; }
+  .c-supermario > div:nth-child(2) {
+    background: transparent; }
+  .c-supermario > div:nth-child(3) {
+    background: transparent; }
+  .c-supermario > div:nth-child(4) {
+    background: #fb0d1b; }
+  .c-supermario > div:nth-child(5) {
+    background: #fb0d1b; }
+  .c-supermario > div:nth-child(6) {
+    background: #fb0d1b; }
+  .c-supermario > div:nth-child(7) {
+    background: #fb0d1b; }
+  .c-supermario > div:nth-child(8) {
+    background: #fb0d1b; }
+  .c-supermario > div:nth-child(9) {
+    background: transparent; }
+  .c-supermario > div:nth-child(10) {
+    background: transparent; }
+  .c-supermario > div:nth-child(11) {
+    background: transparent; }
+  .c-supermario > div:nth-child(12) {
+    background: transparent; }
+  .c-supermario > div:nth-child(13) {
+    background: transparent; }
+  .c-supermario > div:nth-child(14) {
+    background: transparent; }
+  .c-supermario > div:nth-child(15) {
+    background: #fb0d1b; }
+  .c-supermario > div:nth-child(16) {
+    background: #fb0d1b; }
+  .c-supermario > div:nth-child(17) {
+    background: #fb0d1b; }
+  .c-supermario > div:nth-child(18) {
+    background: #fb0d1b; }
+  .c-supermario > div:nth-child(19) {
+    background: #fb0d1b; }
+  .c-supermario > div:nth-child(20) {
+    background: #fb0d1b; }
+  .c-supermario > div:nth-child(21) {
+    background: #fb0d1b; }
+  .c-supermario > div:nth-child(22) {
+    background: #fb0d1b; }
+  .c-supermario > div:nth-child(23) {
+    background: #fb0d1b; }
+  .c-supermario > div:nth-child(24) {
+    background: transparent; }
+  .c-supermario > div:nth-child(25) {
+    background: transparent; }
+  .c-supermario > div:nth-child(26) {
+    background: transparent; }
+  .c-supermario > div:nth-child(27) {
+    background: #6b6d00; }
+  .c-supermario > div:nth-child(28) {
+    background: #6b6d00; }
+  .c-supermario > div:nth-child(29) {
+    background: #6b6d00; }
+  .c-supermario > div:nth-child(30) {
+    background: #ea9f22; }
+  .c-supermario > div:nth-child(31) {
+    background: #ea9f22; }
+  .c-supermario > div:nth-child(32) {
+    background: #6b6d00; }
+  .c-supermario > div:nth-child(33) {
+    background: #ea9f22; }
+  .c-supermario > div:nth-child(34) {
+    background: transparent; }
+  .c-supermario > div:nth-child(35) {
+    background: transparent; }
+  .c-supermario > div:nth-child(36) {
+    background: transparent; }
+  .c-supermario > div:nth-child(37) {
+    background: transparent; }
+  .c-supermario > div:nth-child(38) {
+    background: #6b6d00; }
+  .c-supermario > div:nth-child(39) {
+    background: #ea9f22; }
+  .c-supermario > div:nth-child(40) {
+    background: #6b6d00; }
+  .c-supermario > div:nth-child(41) {
+    background: #ea9f22; }
+  .c-supermario > div:nth-child(42) {
+    background: #ea9f22; }
+  .c-supermario > div:nth-child(43) {
+    background: #ea9f22; }
+  .c-supermario > div:nth-child(44) {
+    background: #6b6d00; }
+  .c-supermario > div:nth-child(45) {
+    background: #ea9f22; }
+  .c-supermario > div:nth-child(46) {
+    background: #ea9f22; }
+  .c-supermario > div:nth-child(47) {
+    background: #ea9f22; }
+  .c-supermario > div:nth-child(48) {
+    background: transparent; }
+  .c-supermario > div:nth-child(49) {
+    background: transparent; }
+  .c-supermario > div:nth-child(50) {
+    background: #6b6d00; }
+  .c-supermario > div:nth-child(51) {
+    background: #ea9f22; }
+  .c-supermario > div:nth-child(52) {
+    background: #6b6d00; }
+  .c-supermario > div:nth-child(53) {
+    background: #6b6d00; }
+  .c-supermario > div:nth-child(54) {
+    background: #ea9f22; }
+  .c-supermario > div:nth-child(55) {
+    background: #ea9f22; }
+  .c-supermario > div:nth-child(56) {
+    background: #ea9f22; }
+  .c-supermario > div:nth-child(57) {
+    background: #6b6d00; }
+  .c-supermario > div:nth-child(58) {
+    background: #ea9f22; }
+  .c-supermario > div:nth-child(59) {
+    background: #ea9f22; }
+  .c-supermario > div:nth-child(60) {
+    background: #ea9f22; }
+  .c-supermario > div:nth-child(61) {
+    background: transparent; }
+  .c-supermario > div:nth-child(62) {
+    background: #6b6d00; }
+  .c-supermario > div:nth-child(63) {
+    background: #6b6d00; }
+  .c-supermario > div:nth-child(64) {
+    background: #ea9f22; }
+  .c-supermario > div:nth-child(65) {
+    background: #ea9f22; }
+  .c-supermario > div:nth-child(66) {
+    background: #ea9f22; }
+  .c-supermario > div:nth-child(67) {
+    background: #ea9f22; }
+  .c-supermario > div:nth-child(68) {
+    background: #6b6d00; }
+  .c-supermario > div:nth-child(69) {
+    background: #6b6d00; }
+  .c-supermario > div:nth-child(70) {
+    background: #6b6d00; }
+  .c-supermario > div:nth-child(71) {
+    background: #6b6d00; }
+  .c-supermario > div:nth-child(72) {
+    background: transparent; }
+  .c-supermario > div:nth-child(73) {
+    background: transparent; }
+  .c-supermario > div:nth-child(74) {
+    background: transparent; }
+  .c-supermario > div:nth-child(75) {
+    background: transparent; }
+  .c-supermario > div:nth-child(76) {
+    background: #ea9f22; }
+  .c-supermario > div:nth-child(77) {
+    background: #ea9f22; }
+  .c-supermario > div:nth-child(78) {
+    background: #ea9f22; }
+  .c-supermario > div:nth-child(79) {
+    background: #ea9f22; }
+  .c-supermario > div:nth-child(80) {
+    background: #ea9f22; }
+  .c-supermario > div:nth-child(81) {
+    background: #ea9f22; }
+  .c-supermario > div:nth-child(82) {
+    background: #ea9f22; }
+  .c-supermario > div:nth-child(83) {
+    background: transparent; }
+  .c-supermario > div:nth-child(84) {
+    background: transparent; }
+  .c-supermario > div:nth-child(85) {
+    background: transparent; }
+  .c-supermario > div:nth-child(86) {
+    background: transparent; }
+  .c-supermario > div:nth-child(87) {
+    background: #6b6d00; }
+  .c-supermario > div:nth-child(88) {
+    background: #6b6d00; }
+  .c-supermario > div:nth-child(89) {
+    background: #fb0d1b; }
+  .c-supermario > div:nth-child(90) {
+    background: #6b6d00; }
+  .c-supermario > div:nth-child(91) {
+    background: #6b6d00; }
+  .c-supermario > div:nth-child(92) {
+    background: #6b6d00; }
+  .c-supermario > div:nth-child(93) {
+    background: transparent; }
+  .c-supermario > div:nth-child(94) {
+    background: transparent; }
+  .c-supermario > div:nth-child(95) {
+    background: transparent; }
+  .c-supermario > div:nth-child(96) {
+    background: transparent; }
+  .c-supermario > div:nth-child(97) {
+    background: transparent; }
+  .c-supermario > div:nth-child(98) {
+    background: #6b6d00; }
+  .c-supermario > div:nth-child(99) {
+    background: #6b6d00; }
+  .c-supermario > div:nth-child(100) {
+    background: #6b6d00; }
+  .c-supermario > div:nth-child(101) {
+    background: #fb0d1b; }
+  .c-supermario > div:nth-child(102) {
+    background: #6b6d00; }
+  .c-supermario > div:nth-child(103) {
+    background: #6b6d00; }
+  .c-supermario > div:nth-child(104) {
+    background: #fb0d1b; }
+  .c-supermario > div:nth-child(105) {
+    background: #6b6d00; }
+  .c-supermario > div:nth-child(106) {
+    background: #6b6d00; }
+  .c-supermario > div:nth-child(107) {
+    background: #6b6d00; }
+  .c-supermario > div:nth-child(108) {
+    background: transparent; }
+  .c-supermario > div:nth-child(109) {
+    background: #6b6d00; }
+  .c-supermario > div:nth-child(110) {
+    background: #6b6d00; }
+  .c-supermario > div:nth-child(111) {
+    background: #6b6d00; }
+  .c-supermario > div:nth-child(112) {
+    background: #6b6d00; }
+  .c-supermario > div:nth-child(113) {
+    background: #fb0d1b; }
+  .c-supermario > div:nth-child(114) {
+    background: #fb0d1b; }
+  .c-supermario > div:nth-child(115) {
+    background: #fb0d1b; }
+  .c-supermario > div:nth-child(116) {
+    background: #fb0d1b; }
+  .c-supermario > div:nth-child(117) {
+    background: #6b6d00; }
+  .c-supermario > div:nth-child(118) {
+    background: #6b6d00; }
+  .c-supermario > div:nth-child(119) {
+    background: #6b6d00; }
+  .c-supermario > div:nth-child(120) {
+    background: #6b6d00; }
+  .c-supermario > div:nth-child(121) {
+    background: #ea9f22; }
+  .c-supermario > div:nth-child(122) {
+    background: #ea9f22; }
+  .c-supermario > div:nth-child(123) {
+    background: #6b6d00; }
+  .c-supermario > div:nth-child(124) {
+    background: #fb0d1b; }
+  .c-supermario > div:nth-child(125) {
+    background: #ea9f22; }
+  .c-supermario > div:nth-child(126) {
+    background: #fb0d1b; }
+  .c-supermario > div:nth-child(127) {
+    background: #fb0d1b; }
+  .c-supermario > div:nth-child(128) {
+    background: #ea9f22; }
+  .c-supermario > div:nth-child(129) {
+    background: #fb0d1b; }
+  .c-supermario > div:nth-child(130) {
+    background: #6b6d00; }
+  .c-supermario > div:nth-child(131) {
+    background: #ea9f22; }
+  .c-supermario > div:nth-child(132) {
+    background: #ea9f22; }
+  .c-supermario > div:nth-child(133) {
+    background: #ea9f22; }
+  .c-supermario > div:nth-child(134) {
+    background: #ea9f22; }
+  .c-supermario > div:nth-child(135) {
+    background: #ea9f22; }
+  .c-supermario > div:nth-child(136) {
+    background: #fb0d1b; }
+  .c-supermario > div:nth-child(137) {
+    background: #fb0d1b; }
+  .c-supermario > div:nth-child(138) {
+    background: #fb0d1b; }
+  .c-supermario > div:nth-child(139) {
+    background: #fb0d1b; }
+  .c-supermario > div:nth-child(140) {
+    background: #fb0d1b; }
+  .c-supermario > div:nth-child(141) {
+    background: #fb0d1b; }
+  .c-supermario > div:nth-child(142) {
+    background: #ea9f22; }
+  .c-supermario > div:nth-child(143) {
+    background: #ea9f22; }
+  .c-supermario > div:nth-child(144) {
+    background: #ea9f22; }
+  .c-supermario > div:nth-child(145) {
+    background: #ea9f22; }
+  .c-supermario > div:nth-child(146) {
+    background: #ea9f22; }
+  .c-supermario > div:nth-child(147) {
+    background: #fb0d1b; }
+  .c-supermario > div:nth-child(148) {
+    background: #fb0d1b; }
+  .c-supermario > div:nth-child(149) {
+    background: #fb0d1b; }
+  .c-supermario > div:nth-child(150) {
+    background: #fb0d1b; }
+  .c-supermario > div:nth-child(151) {
+    background: #fb0d1b; }
+  .c-supermario > div:nth-child(152) {
+    background: #fb0d1b; }
+  .c-supermario > div:nth-child(153) {
+    background: #fb0d1b; }
+  .c-supermario > div:nth-child(154) {
+    background: #fb0d1b; }
+  .c-supermario > div:nth-child(155) {
+    background: #ea9f22; }
+  .c-supermario > div:nth-child(156) {
+    background: #ea9f22; }
+  .c-supermario > div:nth-child(157) {
+    background: transparent; }
+  .c-supermario > div:nth-child(158) {
+    background: transparent; }
+  .c-supermario > div:nth-child(159) {
+    background: #fb0d1b; }
+  .c-supermario > div:nth-child(160) {
+    background: #fb0d1b; }
+  .c-supermario > div:nth-child(161) {
+    background: #fb0d1b; }
+  .c-supermario > div:nth-child(162) {
+    background: transparent; }
+  .c-supermario > div:nth-child(163) {
+    background: transparent; }
+  .c-supermario > div:nth-child(164) {
+    background: #fb0d1b; }
+  .c-supermario > div:nth-child(165) {
+    background: #fb0d1b; }
+  .c-supermario > div:nth-child(166) {
+    background: #fb0d1b; }
+  .c-supermario > div:nth-child(167) {
+    background: transparent; }
+  .c-supermario > div:nth-child(168) {
+    background: transparent; }
+  .c-supermario > div:nth-child(169) {
+    background: transparent; }
+  .c-supermario > div:nth-child(170) {
+    background: #6b6d00; }
+  .c-supermario > div:nth-child(171) {
+    background: #6b6d00; }
+  .c-supermario > div:nth-child(172) {
+    background: #6b6d00; }
+  .c-supermario > div:nth-child(173) {
+    background: transparent; }
+  .c-supermario > div:nth-child(174) {
+    background: transparent; }
+  .c-supermario > div:nth-child(175) {
+    background: transparent; }
+  .c-supermario > div:nth-child(176) {
+    background: transparent; }
+  .c-supermario > div:nth-child(177) {
+    background: #6b6d00; }
+  .c-supermario > div:nth-child(178) {
+    background: #6b6d00; }
+  .c-supermario > div:nth-child(179) {
+    background: #6b6d00; }
+  .c-supermario > div:nth-child(180) {
+    background: transparent; }
+  .c-supermario > div:nth-child(181) {
+    background: #6b6d00; }
+  .c-supermario > div:nth-child(182) {
+    background: #6b6d00; }
+  .c-supermario > div:nth-child(183) {
+    background: #6b6d00; }
+  .c-supermario > div:nth-child(184) {
+    background: #6b6d00; }
+  .c-supermario > div:nth-child(185) {
+    background: transparent; }
+  .c-supermario > div:nth-child(186) {
+    background: transparent; }
+  .c-supermario > div:nth-child(187) {
+    background: transparent; }
+  .c-supermario > div:nth-child(188) {
+    background: transparent; }
+  .c-supermario > div:nth-child(189) {
+    background: #6b6d00; }
+  .c-supermario > div:nth-child(190) {
+    background: #6b6d00; }
+  .c-supermario > div:nth-child(191) {
+    background: #6b6d00; }
+  .c-supermario > div:nth-child(192) {
+    background: #6b6d00; }
+
+.c-supermario div:nth-child(32) {
+  animation: wink 2s steps(1, end) infinite; }
+
+.c-supermario div:nth-child(43) {
+  animation: wink--reverse 2s steps(1, end) infinite; }

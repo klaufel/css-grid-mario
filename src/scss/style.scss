@@ -1,0 +1,118 @@
+/* ============================================================
+ * Here we go!! Another madness more... 
+ * ============================================================
+ *
+ * Testing the possibilities that CSS Grid layout will offer us,
+ * in this example we created a grid to paint them and create pixel art ;)
+ *
+ */
+
+
+// ============================================================
+// Variables
+
+$c-supermario__dimension:          20px !default;
+$c-supermario__columns:            12 !default;
+$c-supermario__rows:               16 !default;
+$c-supermario__gap:                1px !default;
+
+$c-supermario__width:              $c-supermario__dimension * $c-supermario__columns !default;
+$c-supermario__height:             $c-supermario__dimension * $c-supermario__rows !default;
+
+
+$c-supermario__colors--w:          transparent !default;
+$c-supermario__colors--r:          #fb0d1b !default;
+$c-supermario__colors--y:          #ea9f22 !default;
+$c-supermario__colors--g:          #6b6d00 !default;
+
+$c-supermario__colors : (
+  'w':    $c-supermario__colors--w,
+  'r':    $c-supermario__colors--r,
+  'y':    $c-supermario__colors--y,
+  'g':    $c-supermario__colors--g
+) !default;
+
+
+$c-supermario__cells : (
+  'w', 'w', 'w', 'r', 'r', 'r', 'r', 'r', 'w', 'w', 'w', 'w',
+  'w', 'w', 'r', 'r', 'r', 'r', 'r', 'r', 'r', 'r', 'r', 'w',
+  'w', 'w', 'g', 'g', 'g', 'y', 'y', 'g', 'y', 'w', 'w', 'w',
+  'w', 'g', 'y', 'g', 'y', 'y', 'y', 'g', 'y', 'y', 'y', 'w',
+  'w', 'g', 'y', 'g', 'g', 'y', 'y', 'y', 'g', 'y', 'y', 'y',
+  'w', 'g', 'g', 'y', 'y', 'y', 'y', 'g', 'g', 'g', 'g', 'w',
+  'w', 'w', 'w', 'y', 'y', 'y', 'y', 'y', 'y', 'y', 'w', 'w',
+  'w', 'w', 'g', 'g', 'r', 'g', 'g', 'g', 'w', 'w', 'w', 'w',
+  'w', 'g', 'g', 'g', 'r', 'g', 'g', 'r', 'g', 'g', 'g', 'w',
+  'g', 'g', 'g', 'g', 'r', 'r', 'r', 'r', 'g', 'g', 'g', 'g',
+  'y', 'y', 'g', 'r', 'y', 'r', 'r', 'y', 'r', 'g', 'y', 'y',
+  'y', 'y', 'y', 'r', 'r', 'r', 'r', 'r', 'r', 'y', 'y', 'y',
+  'y', 'y', 'r', 'r', 'r', 'r', 'r', 'r', 'r', 'r', 'y', 'y',
+  'w', 'w', 'r', 'r', 'r', 'w', 'w', 'r', 'r', 'r', 'w', 'w',
+  'w', 'g', 'g', 'g', 'w', 'w', 'w', 'w', 'g', 'g', 'g', 'w',
+  'g', 'g', 'g', 'g', 'w', 'w', 'w', 'w', 'g', 'g', 'g', 'g'
+) !default;
+
+$c-supermario__positions: length($c-supermario__cells);
+
+
+
+// ============================================================
+// Mixins & functions
+
+@mixin c-supermario__pixelart() {
+  @for $i from 1 through $c-supermario__positions {
+    > div:nth-child(#{$i}) {
+      background: map-get($c-supermario__colors, nth($c-supermario__cells, $i));
+    }
+  }
+}
+
+
+@keyframes wink {
+  0%, 100% {
+    background: $c-supermario__colors--g;
+  }
+  90% {
+    background: $c-supermario__colors--y;
+  }
+}
+
+
+
+// ============================================================
+// Output CSS
+
+
+body {
+  background: #a0a2fc;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.c-supermario {
+  width: $c-supermario__width;
+  height: $c-supermario__height;
+  display: grid;
+  grid-template-columns: repeat($c-supermario__columns, 1fr);
+  grid-template-rows: repeat($c-supermario__rows, 1fr);
+  grid-column-gap: $c-supermario__gap;
+  grid-row-gap: $c-supermario__gap;
+  @include c-supermario__pixelart();
+}
+
+
+// Wink ;)
+.c-supermario div:nth-child(32) {    
+   animation: wink 2s steps(1, end) infinite;
+}
+
+.c-supermario div:nth-child(43) {    
+   animation: wink--reverse 2s steps(1, end) infinite;
+}
+
+
